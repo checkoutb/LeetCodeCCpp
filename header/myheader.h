@@ -1,5 +1,5 @@
 #ifndef MYHEADER_H_INCLUDED
-#define MYHEADER_H_INCLUDED
+#define MYHEADER_H_INCLUDED 1
 
 
 #include <cstdio>
@@ -20,3 +20,18 @@
 #include <climits>
 
 #endif // MYHEADER_H_INCLUDED
+
+#ifndef __test
+#define __test 1
+#endif // TEST
+
+using namespace std;
+
+void fun_cout(int i)
+{
+    cout<<i<<", ";
+}
+
+
+
+
