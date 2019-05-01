@@ -19,13 +19,15 @@
 #include <queue>
 #include <climits>
 
-#endif // MYHEADER_H_INCLUDED
+//------
+#include "listnode.h"
+
 
 #ifndef __test
 #define __test 1
 #endif // TEST
 
-using namespace std;
+
 
 void fun_cout(int i)
 {
@@ -38,3 +40,6 @@ void fun_cout(int i)
 //}
 
 
+#endif // MYHEADER_H_INCLUDED
+
+using namespace std;
