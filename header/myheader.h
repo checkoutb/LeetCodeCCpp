@@ -34,10 +34,10 @@ void fun_cout(int i)
     cout<<i<<", ";
 }
 
-//void fun_cout_s(string s)
-//{
-//    cout<<s<<"; ";
-//}
+void fun_cout_s(string s)
+{
+    cout<<s<<"; ";
+}
 
 
 #endif // MYHEADER_H_INCLUDED
