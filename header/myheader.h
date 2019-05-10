@@ -19,6 +19,9 @@
 #include <queue>
 #include <climits>
 
+#include <unordered_set>
+#include <unordered_map>
+
 //------
 #include "listnode.h"
 #include "treenode.h"
