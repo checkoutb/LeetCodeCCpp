@@ -42,9 +42,19 @@ void fun_cout(int i)
 
 void fun_cout_s(string s)
 {
-    cout<<s<<"; ";
+    cout<<"f_cout_s :"<<s<<"; "<<endl;
 }
 
+void show_stack_int(stack<int> stk)
+{
+    cout<<endl<<"...stack...start..."<<endl;
+    while (!stk.empty())
+    {
+        cout<<stk.top()<<endl;
+        stk.pop();
+    }
+    cout<<"...stack....end...."<<endl<<endl;
+}
 
 #endif // MYHEADER_H_INCLUDED
 
