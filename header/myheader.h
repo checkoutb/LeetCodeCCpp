@@ -25,6 +25,8 @@
 #include <time.h>
 #include <windows.h>
 
+#include <numeric>
+
 //------
 #include "listnode.h"
 #include "treenode.h"
