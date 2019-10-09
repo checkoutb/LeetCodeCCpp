@@ -270,7 +270,7 @@ void showTreeNode(TreeNode* node, int lvs)
                 cout<<" ";
                 j++;
             }
-            if (np->val < 0)
+            if (np->val < INT_MIN + 2)
             {
                 cout<<"Nil";
             }
@@ -279,9 +279,9 @@ void showTreeNode(TreeNode* node, int lvs)
                 cout<<np->val<<", ";
             }
             que.pop();
-            que.push(np->left == nullptr ? new TreeNode(-1) : np->left);
-            que.push(np->right == NULL ? new TreeNode(-2) : np->right);
-            flag = np->left == NULL && np->right == NULL;
+            que.push(np->left == nullptr ? new TreeNode(INT_MIN) : np->left);
+            que.push(np->right == NULL ? new TreeNode(INT_MIN + 1) : np->right);
+            flag &= np->left == NULL && np->right == NULL;
         }
         cout<<endl;
         k >>= 1;

@@ -31,7 +31,7 @@ input
 1-2-3-4-5-6
     \7-8-9-10
        \11-12
-mine wrong
+mine is wrong
 {"$id":"1","child":null,"next":{"$id":"2","child":null,"next":{"$id":"3","child":null,"next":
     {"$id":"4","child":null,"next":{"$id":"5","child":null,"next":{"$id":"6","child":null,"next":
         {"$id":"7","child":null,"next":{"$id":"8","child":null,"next":{"$id":"9","child":null,"next":
