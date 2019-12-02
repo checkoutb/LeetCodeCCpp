@@ -1,3 +1,12 @@
 
-*.exe
-*.o
+# ignore all
+*
+
+# don't ignore directory
+!*/
+
+# don'n ignore *.cpp *.h
+!*.cpp
+!*.h
+
+# linux的执行文件没有后缀。。。无法使用之前的 *.o *.exe 了

@@ -308,7 +308,7 @@ void showTreeNode(TreeNode* node)
             que.pop();
             if (n->left == NULL)
             {
-                que.push(new TreeNode(-1));     // &?
+                que.push(new TreeNode(-123));     // &?
             }
             else
             {
@@ -317,7 +317,7 @@ void showTreeNode(TreeNode* node)
             }
             if (n->right == NULL)
             {
-                que.push(new TreeNode(-2));
+                que.push(new TreeNode(-321));
             }
             else
             {

@@ -155,14 +155,14 @@ public:
     }
 };
 
-int main()
-{
-    vector<int> v1 = {1,2,3,4};
-
-//    vector<int> v1 = {1,2,3,4,5,6};
-
-    LT0413 lt;
-    cout<<endl<<"result: "<<lt.lt0413b(v1)<<endl;
-
-    return 0;
-}
+//int main()
+//{
+//    vector<int> v1 = {1,2,3,4};
+//
+////    vector<int> v1 = {1,2,3,4,5,6};
+//
+//    LT0413 lt;
+//    cout<<endl<<"result: "<<lt.lt0413b(v1)<<endl;
+//
+//    return 0;
+//}
