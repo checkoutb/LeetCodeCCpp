@@ -23,7 +23,7 @@
 #include <unordered_map>
 
 #include <time.h>
-#include <windows.h>
+//#include <windows.h>      // ubuntu g++7.4 cannot find this file
 
 #include <numeric>
 
