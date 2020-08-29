@@ -282,9 +282,20 @@ void showTreeNode(TreeNode* node, int lvs)
             que.push(np->left == nullptr ? new TreeNode(INT_MIN) : np->left);
             que.push(np->right == NULL ? new TreeNode(INT_MIN + 1) : np->right);
             flag &= np->left == NULL && np->right == NULL;
+            if (np->val <= INT_MIN + 1)
+                delete np;
         }
         cout<<endl;
         k >>= 1;
+    }
+    while (!que.empty())
+    {
+        np = que.front();
+        que.pop();
+        if (np->val <= INT_MIN + 1)
+        {
+            delete np;
+        }
     }
 }
 
@@ -331,5 +342,21 @@ void showTreeNode(TreeNode* node)
     }
 }
 
+void pri_destory(TreeNode*);
+
+void destory(TreeNode* node)
+{
+    cout<<"use as destructor..."<<endl;
+    pri_destory(node);
+}
+
+void pri_destory(TreeNode* node)
+{
+    if (node == nullptr)
+        return;
+    pri_destory(node->left);
+    pri_destory(node->right);
+    delete node;
+}
 
 #endif // TREENODE_H_INCLUDED
