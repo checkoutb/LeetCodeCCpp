@@ -359,4 +359,14 @@ void pri_destory(TreeNode* node)
     delete node;
 }
 
+void deleteTreeNode(TreeNode* n)
+{
+    if (n == nullptr)
+        return;
+    deleteTreeNode(n->left);
+    deleteTreeNode(n->right);
+    delete n;
+    return;
+}
+
 #endif // TREENODE_H_INCLUDED
