@@ -27,9 +27,12 @@
 
 #include <numeric>
 
+#include <sstream>
+
 //------
 #include "listnode.h"
 #include "treenode.h"
+#include "mytool.h"
 
 #ifndef __test
 #define __test 1
