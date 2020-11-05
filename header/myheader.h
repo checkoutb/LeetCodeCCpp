@@ -1,6 +1,6 @@
 #ifndef MYHEADER_H_INCLUDED
 #define MYHEADER_H_INCLUDED 1
-
+using namespace std;
 
 #include <cstdio>
 #include <cstring>
@@ -29,16 +29,9 @@
 
 #include <sstream>
 
-//------
-#include "listnode.h"
-#include "treenode.h"
-#include "mytool.h"
-
 #ifndef __test
 #define __test 1
 #endif // TEST
-
-
 
 void fun_cout(int i)
 {
@@ -61,6 +54,11 @@ void show_stack_int(stack<int> stk)
     cout<<"...stack....end...."<<endl<<endl;
 }
 
+//------
+#include "listnode.h"
+#include "treenode.h"
+#include "mytool.h"     // 里面使用到了 fun_cout，所以需要 在fun_cout定义后包含。
+
 #endif // MYHEADER_H_INCLUDED
 
-using namespace std;
+
