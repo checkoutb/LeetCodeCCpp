@@ -23,3 +23,16 @@
 ##### 36.4 % acceptance rate
 ##### &#160;&#160;&#160;&#160;&#160;&#160; 2020-10-18.
 
+<br />
+
+##### 700 / 1659 questions solved
+##### 113 Attempted
+##### 2686 total submissions
+##### 1008 accepted submissions
+##### 37.5 % acceptance rate
+##### Easy 251/441
+##### Medium 393/867
+##### Hard 56/351
+##### &#160;&#160;&#160;&#160;&#160;&#160; 2020-11-17.
+
+
