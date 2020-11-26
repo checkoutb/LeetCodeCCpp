@@ -31,3 +31,6 @@ void showVectorInt(vector<int> v)
     for_each(begin(v), end(v), fun_cout);
     cout<<endl;
 }
+
+#define myvvi vector<vector<int>>
+#define myvi vector<int>
