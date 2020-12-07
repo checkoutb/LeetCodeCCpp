@@ -16,6 +16,7 @@ def mk_cpp():
 
     # print("-------------")
 
+    lt_name = lt_name.replace("'", "")
     t2 = lt_name[0:lt_name.find('.')]
     f_name = "/LT" + t2.zfill(4) + "_" + lt_name[lt_name.find('.') + 2 :].replace(" ", "_") + ".cpp"
     dir_name = "ge" + str(int(int(int(t2)/100)*100))
