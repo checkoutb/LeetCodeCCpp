@@ -14,7 +14,13 @@ struct ListNode
 template<class T>
 ListNode* convertArray(T& arr)
 {
-    int len = sizeof(arr) / sizeof(arr[0]);
+//    int len = sizeof(arr) / sizeof(arr[0]);
+    int len = 0;
+    if (typeid(vector<int>) == typeid(arr))
+        len = arr.size();
+    else
+        len = sizeof(arr) / sizeof(arr[0]);
+
     struct ListNode head(-1);
     struct ListNode* p = &head;
     for (int i = 0; i < len; i++)

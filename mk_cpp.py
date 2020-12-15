@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 # mk xxxx.cpp
 
@@ -18,7 +19,7 @@ def mk_cpp():
 
     lt_name = lt_name.replace("'", "")
     t2 = lt_name[0:lt_name.find('.')]
-    f_name = "/LT" + t2.zfill(4) + "_" + lt_name[lt_name.find('.') + 2 :].replace(" ", "_") + ".cpp"
+    f_name = "/LT" + t2.zfill(4) + "_" + time.strftime("%Y-%m-%d", time.localtime()) + "_" + lt_name[lt_name.find('.') + 2 :].replace(" ", "_").replace("'", "") + ".cpp"
     dir_name = "ge" + str(int(int(int(t2)/100)*100))
     if int(t2) < 100:
         dir_name = "gt000"
