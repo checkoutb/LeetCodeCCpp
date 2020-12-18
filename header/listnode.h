@@ -15,10 +15,11 @@ template<class T>
 ListNode* convertArray(T& arr)
 {
 //    int len = sizeof(arr) / sizeof(arr[0]);
+
     int len = 0;
-    if (typeid(vector<int>) == typeid(arr))
-        len = arr.size();
-    else
+//    if (typeid(vector<int>).name() == typeid(arr).name())
+//        len = arr.size();             // 不行，传入数组时，编译失败，数组没有size方法。
+//    else
         len = sizeof(arr) / sizeof(arr[0]);
 
     struct ListNode head(-1);
