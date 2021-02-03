@@ -5,6 +5,17 @@ class LT0115
 {
 public:
 
+// D
+
+
+// 任意的s子串，都能找到subseq 匹配 ""(来自t)，所以 dp[x][0] = 1
+//    if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
+//    if the current character in S equal to the current character T,
+//then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.
+// 如果不想等，那么s[i] 匹配不到t[j], 所以 dp[i][j] 的值 还是 只匹配到 t[j-1]的值
+// 如果相等， s[i] 可以存在 subseq中， 也可以不放到subseq中， 如果放，那么就是 [i-1][j-1] 的基础上 各自加上i,j， 所以 个数不变。 dp[i-1][j-1]
+//      如果不放， 那么就 是 到t[j-1]的值。   dp[i][j-1]
+
 
 
 // 估计类似 昨天的，10, 44
