@@ -9,5 +9,6 @@
 !*.cpp
 !*.h
 !mk_cpp.py
+!*.py
 
 # linux的执行文件没有后缀。。。无法使用之前的 *.o *.exe 了
