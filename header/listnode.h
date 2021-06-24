@@ -47,5 +47,14 @@ void showListNode(ListNode* n)
     cout<<endl;
 }
 
+void deleteListNode(ListNode* n)
+{
+    while (n != nullptr)
+    {
+        ListNode* t2 = n->next;
+        delete n;
+        n = t2;
+    }
+}
 
 #endif // LISTNODE_H_INCLUDED
