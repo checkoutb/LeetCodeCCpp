@@ -49,4 +49,25 @@ int main()
 //        cout<<"catch: "<<s<<endl;
 //    }
 
+
+    string s = "asd";
+    vector<string> vs;
+    vs.push_back(string(1, s[0]));
+    cout<<vs[0]<<endl;
+
+
+    using ti = tuple<int, int, int>;
+    priority_queue<ti, vector<ti>, greater<>> pq;
+    pq.emplace(1,5,1123);
+    cout<<std::get<2>(pq.top())<<endl;
+    auto [t1,t2,_] = pq.top();              // _ 是变量名字，不能重复，  []中变量个数要等于声明的tuple的元素个数。
+                                    // 类型必须auto。 反正用int 不行。说 structured binding declaration cannot have type 'int'
+    cout<<t1<<", "<<t2<<", "<<_<<endl;
+
+    int arr[2][2] = {{1,2},{3,4}};
+    auto& [x,y] = arr[1];
+    cout<<x<<", "<<y<<endl;
+
+
+
 }
