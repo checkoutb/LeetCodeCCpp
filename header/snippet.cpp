@@ -69,5 +69,18 @@ int main()
     cout<<x<<", "<<y<<endl;
 
 
+//    long long dp[steps+1][max_pos+1];
+//    memset(dp, 0, sizeof(dp));
+
+    int mod(1e9+7);
+    cout<<mod<<endl;
+//    int mod2{1e9 + 7};            // connot convert double to int...
+//    cout<<mod2<<endl;
+
+
+    cout<<__builtin_popcount(7)<<endl;          // sum(every bit)
+
+//return vector<int>(arr.begin() + l + 1, arr.begin() + r);
+
 
 }
