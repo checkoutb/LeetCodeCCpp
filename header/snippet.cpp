@@ -88,7 +88,14 @@ int main()
 
 
 //    long long dp[steps+1][max_pos+1];
-//    memset(dp, 0, sizeof(dp));
+//    memset(dp, 0, sizeof(dp));            // 设置每个 byte 的值。
+
+//        int dp[n+1][d+1];
+//        fill_n(&dp[0][0],(n+1)*(d+1),1e9);
+
+
+    cout<<std::numeric_limits<int>::max()<<endl;
+
 
     int mod(1e9+7);
     cout<<mod<<endl;
@@ -145,10 +152,10 @@ int main()
 
 
 
+// Fenwick
 
 
-
-
+// Segment
 
 
 
