@@ -3,6 +3,57 @@
 #include <iomanip>
 
 
+//struct MyKey
+//{
+//	int key;
+//};
+//
+//struct MyKeyHashHasher
+//{
+//	size_t operator()(const MyKey &k) const noexcept
+//	{
+//		return std::hash<int>{}(k.key);
+//	}
+//};
+//
+//struct MyKeyHashComparator
+//{
+//	bool operator()(const MyKey &k1, const MyKey &k2) const noexcept
+//	{
+//		return k1.key == k2.key;
+//	}
+//};
+//
+//int main()
+//{
+//	std::unordered_set<MyKey,MyKeyHashHasher,MyKeyHashComparator> ss;
+//	return 0;
+//}
+
+
+
+
+
+//class Hasher {
+//public:
+//    size_t operator() (string const& key) const {
+//        size_t hash = 0;
+//        for(size_t i = 0; i < key.size(); i++) {
+//            hash += key[i] % 7;
+//        }
+//        return hash;
+//    }
+//};
+//
+//int main(int argc, char const *argv[]) {
+//
+//    unordered_multimap<int, int, Hasher, equal_to<int>> hashmap;
+
+
+
+
+
+
 class MyClass
 {
 public:
