@@ -217,8 +217,38 @@ int main()
 //}
 
 
+//        return all_of(begin(char_count), end(char_count),
+//                      [&](int c) { return c % words.size() == 0; });
 
 
+// LT 1897
+//    vector<string> vs = {"abc", "aaa", "bbb"};
+//    vector<int> arr(123, 0);
+//    myvi v2 = std::accumulate(begin(vs[0]), end(vs[0]), arr, [](vector<int>& arr, char& ch){          // 前面是 和， 后面是 元素。。。
+//                        cout<<ch<<", "<<", "<<arr.size()<<endl;
+//                        arr[0] = 222;
+//                        arr[1] = 432;
+//                        return arr;
+//                    });
+//    cout<<arr[0]<<", "<<arr[1]<<endl;           // 0.0 ....  初始值不会被修改。
+//    cout<<v2[0]<<", "<<v2[1]<<endl;
+//
+//    myvi v3 = std::accumulate(begin(vs), end(vs), arr, [](vector<int>& arr, string& s){
+//                                    return std::accumulate(begin(s), end(s), arr, [](vector<int>& arr, char& ch){
+//                                                                arr[ch]++;
+//                                                                return arr;
+//                                                           });
+//                              });
+//    for (int i = 'a'; i <= 'c'; ++i)
+//    {
+//        cout<<v3[i]<<endl;
+//    }
+
+
+// vector<int> 的 == , 是比较元素的。
+
+
+// ==  优先级 高于  位运算，逻辑运算，  (乘 / 除 / + / >> / ^ /......)后赋值
 
 
 
