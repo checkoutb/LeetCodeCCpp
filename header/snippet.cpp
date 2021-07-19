@@ -198,6 +198,29 @@ int main()
 //        memset(maxSum,0,sizeof maxSum);
 
 
+//res.erase(it) always returns the next valid iterator, if you erase the last element it will point to .end()
+// while (it != res.end()) {
+//        it = res.erase(it);
+// }
+
+//for ( ; it != res.end(); ) {
+//  if (condition) {
+//    it = res.erase(it);
+//  } else {
+//    ++it;
+//  }
+//}
+
+//for( ; it != res.end();)
+//{
+//    it = res.erase(it);
+//}
+
+
+
+
+
+
 
 // Kadane
 
@@ -210,7 +233,10 @@ int main()
 
 
 
+// KMP
 
+
+// Rabin-Karp   2个人的名字。
 
 
 
