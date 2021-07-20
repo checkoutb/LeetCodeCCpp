@@ -73,6 +73,8 @@ public:
 
 int main()
 {
+
+    // 默认是最大堆，下面是最小堆。
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> q;
 
 //    cout.setf(ios::fixed);        // == cout<<setiosflags(ios::fixed) == cout<<fixed;
@@ -252,6 +254,33 @@ int main()
 
 
 
+// partial_sort 是 heap 来完成的。
+    myvi v2 = {7,6,5,4,3,2,1};
+    std::partial_sort(begin(v2), begin(v2) + 2, end(v2));
+    showVectorInt(v2);
+    // 是 第一个参数 到 第三个参数 之间的范围，有序后， 放到 第一个到 第二个参数 之间。 所以 后n个不可能。。除非 自定义方法，然后 降序。
+    std::partial_sort(begin(v2), begin(v2) + 2, end(v2), [](const int a, const int b){
+                        return a > b;
+                      });
+    showVectorInt(v2);
+
+
+//vector<vector<int>> vvi = grid;             // copy or reference ?  it is copy .... & ref
+// vector<vector<int>>& vvi = grid;
+
+
+
+// not std::
+//__builtin_ffs(x)          // sz1 - last 1's index
+//__builtin_clz(x)          // prefix 0's count
+//__builtin_ctz(x)          // suffix 0's count
+//__builtin_popcount(x)     // 1's count
+//__builtin_parity(x)       // 1's count % 2 == 1(or 0)
+//这些函数都有相应的usigned long和usigned long版本，只需要在函数名后面加上l或ll就可以了，比如int __builtin_clzll。
+
+
+
+
 // Kadane
 
 
@@ -269,6 +298,7 @@ int main()
 // Rabin-Karp   2个人的名字。
 
 
+//Fisher-Yates Algorithm and Knuth Shuffle
 
 
 }
