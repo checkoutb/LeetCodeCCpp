@@ -280,6 +280,24 @@ int main()
 
 
 
+//int first[26] = {[0 ... 25] = INT_MAX}, last[26] = {}, res = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Kadane
 
