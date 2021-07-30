@@ -283,7 +283,8 @@ int main()
 //int first[26] = {[0 ... 25] = INT_MAX}, last[26] = {}, res = 0;
 
 
-
+// 1947
+//inner_product(begin(s[i]), end(s[i]), begin(m[j]), 0, plus<int>(), equal_to<int>())
 
 
 
@@ -317,6 +318,13 @@ int main()
 
 
 //Fisher-Yates Algorithm and Knuth Shuffle
+
+
+// flood-fill
+
+
+// sweep line
+
 
 
 }
