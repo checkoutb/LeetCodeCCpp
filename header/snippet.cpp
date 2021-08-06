@@ -287,6 +287,11 @@ int main()
 //inner_product(begin(s[i]), end(s[i]), begin(m[j]), 0, plus<int>(), equal_to<int>())
 
 
+// 827 daily
+//      if (g[i][j] == 0) {
+//        unordered_set<int> s = { get(i + 1, j, g), get(i - 1, j, g), get(i, j + 1, g), get(i, j - 1, g) };
+//        res = max(res, 1 + accumulate(begin(s), end(s), 0, [&](int a, int b) {return a + sizes[b]; }));
+//      }
 
 
 
