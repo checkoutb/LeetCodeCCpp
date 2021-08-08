@@ -294,7 +294,7 @@ int main()
 //      }
 
 
-
+// 1964 discuss 最长单调递增序列。
 
 
 
@@ -329,6 +329,11 @@ int main()
 
 
 // sweep line
+
+
+// Manacher  最长回文 O(n)
+
+
 
 
 
