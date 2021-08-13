@@ -297,6 +297,18 @@ int main()
 // 1964 discuss 最长单调递增序列。
 
 
+//https://en.cppreference.com/w/cpp/thread
+// sem_wait
+// condition_variable
+
+
+//The __builtin_popcount() function is for g++ only. For C++20 use popcount(). For other compilers use bitset<26>().count().
+
+
+//clock_t clock(void);
+//CLOCKS_PRE_SEC
+
+
 
 
 
@@ -332,6 +344,28 @@ int main()
 
 
 // Manacher  最长回文 O(n)
+
+
+// LT1334
+//Floyd: 14ms
+//Dijkstra: 32ms
+//SPFA: 64ms
+//Bellman: 251ms
+
+// Prim, Kruskal
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
