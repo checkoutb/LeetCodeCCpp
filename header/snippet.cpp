@@ -315,7 +315,12 @@ int main()
 // partial_sum
 
 
+// 转换复数
+//        sscanf(x.c_str(), "%d+%di", &a, &b);
 
+//        char buff;
+//        stringstream aa(a), bb(b), ans;
+//        aa >> ra >> buff >> ia >> buff;
 
 
 
