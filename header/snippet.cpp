@@ -323,6 +323,12 @@ int main()
 //        aa >> ra >> buff >> ia >> buff;
 
 
+//        istringstream in(preorder);
+//        vector<string> v;
+//        string t = "";
+//        int cnt = 0;
+//        while (getline(in, t, ',')) v.push_back(t);
+
 
 
 
