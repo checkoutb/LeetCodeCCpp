@@ -330,6 +330,30 @@ int main()
 //        while (getline(in, t, ',')) v.push_back(t);
 
 
+// nth_element
+
+// std::sort requires that if comp(a,b)==true, comp(b,a)==false
+//https://en.cppreference.com/w/cpp/named_req/Compare
+//    For all a, comp(a,a)==false
+//    If comp(a,b)==true then comp(b,a)==false
+//    if comp(a,b)==true and comp(b,c)==true then comp(a,c)==true
+// comp: 第一个参数 是否 大于 第二个参数。     a>a 是false。   主要是 最终返回的 默认值 需要是 false(走到最后的 都是相等的情况，相等的时候 是false。)。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Kadane
