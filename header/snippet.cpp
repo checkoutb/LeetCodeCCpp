@@ -71,8 +71,13 @@ public:
     }
 };
 
+int asdf = 10;
+
 int main()
 {
+    cout<<asdf<<endl;
+    int asdf = 1000;
+    cout<<"222 "<<asdf<<endl;
 
     // 默认是最大堆，下面是最小堆。
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> q;
