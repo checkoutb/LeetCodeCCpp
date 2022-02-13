@@ -345,18 +345,32 @@ int main()
 // comp: 第一个参数 是否 大于 第二个参数。     a>a 是false。   主要是 最终返回的 默认值 需要是 false(走到最后的 都是相等的情况，相等的时候 是false。)。
 
 
+// std::set is typically implemented as a binary search tree(RB tree in GCC 4.8).
+// It costs O(nlogn) to construct.
+// While std::unordered_set uses hash table, O(n) is expected. That's why @oynasun observes unordered_set is faster.
+
+
+// LT283
+// fill(remove(nums.begin(), nums.end(),0), nums.end(), 0);
+// std::stable_partition(nums.begin(), nums.end(), [](int n){return n!=0;});
 
 
 
+//nums.erase(unique(begin(nums), end(nums)), end(nums));
+// unique返回 A ForwardIt to the new end of the range.
+// erase：Removes the elements in the range [first, last).
+
+
+//    string s1 = "1234";
+//    string s2 = s1;
+//    cout<<&s1<<", "<<&s2<<endl;         // 2 location
+////    string s3 =
+//    reverse(begin(s1), end(s1));
+//    cout<<s1<<", "<<s2<<endl;       // 4321 1234
 
 
 
-
-
-
-
-
-
+//    for (auto &[prefix, cnt] : map2) {
 
 
 
@@ -369,6 +383,8 @@ int main()
 
 
 // Segment
+
+// Binary Indexed Tree
 
 
 
