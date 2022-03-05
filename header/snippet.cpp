@@ -373,6 +373,9 @@ int main()
 //    for (auto &[prefix, cnt] : map2) {
 
 
+//auto [it1, it2] = minmax_element(begin(n), end(n));
+//    int smaller = count_if(begin(nums), end(nums), [&](int n){ return n < target; });
+//    int equal = count(begin(nums), end(nums), target);
 
 
 // Kadane
@@ -415,7 +418,7 @@ int main()
 // Prim, Kruskal
 
 
-
+//Hierholzer’s algorithm
 
 
 
