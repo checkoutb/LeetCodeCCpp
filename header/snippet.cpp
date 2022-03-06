@@ -378,6 +378,23 @@ int main()
 //    int equal = count(begin(nums), end(nums), target);
 
 
+//int *dp = new int[prices.size()];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Kadane
 
 
@@ -420,7 +437,7 @@ int main()
 
 //Hierholzer’s algorithm
 
-
+//Kahn's algo
 
 
 
