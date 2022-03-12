@@ -383,6 +383,39 @@ int main()
 
 
 
+//const auto mm = minmax_element(begin(n), end(n));
+
+
+//stable_partition(stable_partition(begin(n), end(n), [&](int n){ return n < p; }), end(n), [&](int n){ return n == p; });
+
+
+//copy_if(begin(n), end(n), back_inserter(res), [&](int n){ return n > p; });
+
+//            rightset.erase(nums[i + sz1]);              // Removes all elements with the key equivalent to key.
+
+
+// LT2185
+//    return count_if(begin(ws), end(ws), [&](const string &w){
+//       return w.compare(0, pref.size(), pref) == 0;
+//    });
+//
+//    return count_if(begin(ws), end(ws), [&](const string &w){
+//       return w.starts_with(pref);
+//    });
+//
+//return (int)Stream.of(words).filter(w -> w.startsWith(pref)).count();     // java
+
+
+//stable_sort
+
+
+
+
+
+
+
+
+
 
 
 
@@ -440,9 +473,10 @@ int main()
 //Kahn's algo
 
 
-
-
-
+// 凸包
+// Graham Scan
+// Andrew’s Monotone Chain
+// Jarvis March
 
 
 
