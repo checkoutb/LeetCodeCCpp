@@ -410,9 +410,10 @@ int main()
 
 
 
+// stoi(string )        stol        stoll
+// to_string
 
-
-
+// atoi(char* )
 
 
 
@@ -478,8 +479,7 @@ int main()
 // Andrew’s Monotone Chain
 // Jarvis March
 
-
-
+//Sprague-Grundy theorem
 
 
 
