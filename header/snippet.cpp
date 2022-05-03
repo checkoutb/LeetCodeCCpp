@@ -449,13 +449,74 @@ int main()
 //};
 
 
+//        unordered_set<int> set3 = getall4test(circles);
+//        cout<<set2.size()<<", "<<set3.size()<<endl;
+//        vector<int> diff;
+//        set<int> set21(begin(set2), end(set2));
+//        set<int> set31(begin(set3), end(set3));
+////        std::set_difference(begin(set21), end(set21), begin(set31), end(set31), std::inserter(diff, begin(diff)));        // ok
+////        std::set_difference(begin(set21), end(set21), begin(set31), end(set31), begin(diff));         // error
+//        std::set_difference(begin(set21), end(set21), begin(set31), end(set31), std::back_inserter(diff));      // ok
+//        cout<<diff.size()<<endl;
+//        showVectorInt(diff);
+
+
+//#include <ext/pb_ds/assoc_container.hpp>
+//#include <ext/pb_ds/tree_policy.hpp>
+//using namespace __gnu_pbds;
+//
+//#define ordered_set tree<pair<int, int>, null_type,less<pair<int, int>>, rb_tree_tag,tree_order_statistics_node_update>
+
+
+
+//        int n(size(nums)), minAverageDifference(INT_MAX), index;
+//        long long sumFromFront(0), sumFromEnd(0);
+
+
+//    vector<long long> ps{0};
+//    for (int n : nums)
+//        ps.push_back(n + ps.back());
+
+
+
+//    string s = "asd";
+//    unordered_map<string, int> map2;
+//    map2[s] = 1;
+//    s.push_back('a');
+//    map2[s] = 2;
+//
+//    for (auto& p : map2)
+//    {
+//        cout<<p.first<<", "<<p.second<<endl;        // asd:1   asda:2
+//    }
 
 
 
 
-
-
-
+//    int cnt[201] = {}, hash[201] = {}, res = 0;
+//    for (int sz = 0; sz < nums.size(); ++sz) {
+//        unordered_map<int, vector<int>> s;
+//        auto collision = [&](const auto &ids, int i) {
+//            for (int j : ids)
+//                if (equal(begin(nums) + i, begin(nums) + i + sz + 1, begin(nums) + j))
+//                    return true;
+//            return false;
+//        };
+//        for (int i = 0; i + sz < nums.size(); ++i) {
+//            cnt[i] += nums[i + sz] % p == 0;
+//            if (cnt[i] <= k) {
+//                hash[i] = ((long long)hash[i] * 200 + nums[i + sz]) % 1000000007;
+//                if (!collision(s[hash[i]], i)) {
+//                    s[hash[i]].push_back(i);
+//                    ++res;
+//                }
+//            }
+//        }
+//    }
+//    return res;
+// Rolling Hash (Collision Check)
+// https://leetcode.com/problems/k-divisible-elements-subarrays/discuss/1996294/O(n-2)%3A-Rabin-Karp-vs.-Trie
+// Rabin-Karp
 
 
 
