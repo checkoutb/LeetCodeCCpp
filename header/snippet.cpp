@@ -521,6 +521,74 @@ int main()
 
 
 
+
+
+//    // <isBST, min, max, sum>
+//    std::tuple<bool, int, int, int> dfsa1(TreeNode* node, int& ans)
+//
+//            bool b2;
+//            int mn;
+//            int mx;
+//            int sum2;
+//            std::tie(b2, mn, mx, sum2) = dfsa1(node->left, ans);
+//
+//            tuple<bool, int, int, int> t2 = dfsa1(node->right, ans);
+//            bool b2 = std::get<bool>(t2);
+//            int mn = std::get<1>(t2);
+//            int mx = std::get<2>(t2);
+//            int sum2 = std::get<3>(t2);
+
+
+//    array<int, 3> dfs(TreeNode* n) {
+//        auto l = n->left ? dfs(n->left) : array<int, 3>{0, n->val, n->val - 1};
+
+
+
+//    struct BSTNode{
+//        int mn;
+//        int mx;
+//        int sum;
+//        bool isBST;
+//    };
+//    BSTNode findBST(TreeNode* root,int &res){
+//        if(!root){
+//            return {INT_MAX,INT_MIN,0,true};
+//        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Kadane
 
 
