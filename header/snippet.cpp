@@ -557,7 +557,9 @@ int main()
 
 
 
-
+// 都可以，都是传递数组 int arr[10001] = {};
+//    int dfsc1(TreeNode* node, int* arr, int depth)
+//    int dfsc1(TreeNode* node, int (&arr)[10001], int depth)
 
 
 
