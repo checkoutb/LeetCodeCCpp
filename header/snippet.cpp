@@ -569,15 +569,28 @@ int main()
 
 
 
+// LT2288
+    //stringstream ss2;
+    //double discountPercentage = (100 - discount) / 100.0;
+    //ss2 << fixed << setprecision(2) << (discountPercentage * price);
+    //return "$" + ss2.str();
+
+//        long long t2 = strtoll(vs[i].substr(1).c_str(), nullptr, 10);
+//        t2 *= (100 - discount);
+//        string ns = std::to_string(t2);
 
 
+//        std::ostringstream oss;
+//        std::copy(begin(vs), end(vs) - 1, std::ostream_iterator<string>(oss, " "));
+//        oss << vs.back();
+//        string ans = oss.str();
 
 
-
-
-
-
-
+//        istringstream iss(sentence);
+//        vector<string> vs;
+//        string t;
+//        while (getline(iss, t, ' '))
+//            vs.push_back(t);
 
 
 
