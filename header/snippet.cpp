@@ -592,14 +592,24 @@ int main()
 //        while (getline(iss, t, ' '))
 //            vs.push_back(t);
 
+/*
+class NumMatrix {
+    vector<vector<int>> vvi;
+public:
+    NumMatrix(vector<vector<int>>& matrix) {
+        int sz1 = matrix.size();
+        int sz2 = matrix[0].size();
+        vvi = vector<vector<int>>(sz1, vector<int>(sz2, 0));
+        //cout << vvi.size() << ", " << vvi[0].size() << endl;
+*/
 
 
 
 
-
-
-
-
+// daily - 2022-6-4 - LT0051-N-Queues
+//                vector<vector<bool>> v(begin(vvb), end(vvb));
+                //std::copy(begin(vvb), end(vvb), std::back_inserter(v));
+//                cout << &v[0] << ", " << &vvb[0] << endl;     // 2种都是不同地址。 都是150ms左右。。copy的内存消耗大30% (27mb vs 39mb)。
 
 
 
