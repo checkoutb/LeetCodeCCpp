@@ -210,7 +210,14 @@ template<class T>
 TreeNode* convert2TreeNode(T& arr)
 {
     int len = sizeof(arr) / sizeof(arr[0]);
-    TreeNode* arr2[len];
+
+//LeetCodeCCpp\header\treenode.h(213,20): error C2131: 表达式的计算结果不是常数
+//LeetCodeCCpp\header\treenode.h(213,20): message : 因读取超过生命周期的变量而失败
+//LeetCodeCCpp\header\treenode.h(213,20): message : 请参见“len”的用法
+//    TreeNode* arr2[len];
+
+    vector<TreeNode*> arr2(len);
+
     int k = 0;
     for (int i = 0; i < len; i++)
     {
