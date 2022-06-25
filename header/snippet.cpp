@@ -614,6 +614,60 @@ public:
 
 
 
+// std::prev(it, distance) 内部使用了    std::advance(it, -n);
+
+
+
+
+//https://leetcode.com/problems/short-encoding-of-words/discuss/125811/C%2B%2BJavaPython-Easy-Understood-Solution-with-Explanation
+// 中的回复
+// You can use string_view to get an O(1) substr.
+//        unordered_set<string_view> S(words.begin(), words.end());
+//        for (auto& w : words) {
+//            string_view sv(w);
+//            for (int i = 1; i < w.size(); i++) S.erase(sv.substr(i));
+//        }
+//        return accumulate(S.begin(), S.end(), 0, [](int total, const string_view& w){ return total + w.size() + 1; });
+
+
+//string_view::substr()的返回值类型是string_view，不产生新的字符串，不会进行内存分配。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Kadane
 
 
@@ -692,6 +746,58 @@ https://www.cnblogs.com/nullzx/p/7968110.html
 // 然后 遍历边，如果出现 low[x] > dfn[y] , 那么就是桥。
 
 // 因为 割边 的 对立 应该(可能) 是 环。。 环是 肯定没有 割边的， 所以 low 就是 找环。
+
+
+
+
+
+
+// LT1483
+// binary lifting
+//
+// Jump array is a logarithmic data structure. For each node, it stores 1st, 2nd, 4th, 8th and so on ancestors.
+//
+// sparse table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
