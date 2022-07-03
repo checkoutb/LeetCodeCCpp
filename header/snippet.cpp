@@ -764,7 +764,9 @@ https://www.cnblogs.com/nullzx/p/7968110.html
 
 
 
+// suffix array
 
+// LCP array
 
 
 
