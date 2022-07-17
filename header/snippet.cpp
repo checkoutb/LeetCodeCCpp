@@ -652,18 +652,31 @@ public:
 
 
 
+//LT1631
+    //Using BFS is actually an improvement of Bellman - Ford, called Shortest Path Faster Algorithm, https://en.wikipedia.org/wiki/Shortest_Path_Faster_Algorithm
+    //SPFA removes the unnecessary edge relaxations, thus reducing the time complexity, but worst case still the same as Bellman - Ford.
 
 
 
 
+//sort(nums.begin(), nums.end(), greater<int>());
+//sort(nums.rbegin(), nums.rend());
 
 
 
 
-
-
-
-
+//LT1589
+    //vector<int> cnt(nums.size());
+    //for (auto& r : requests) {
+    //    cnt[r[0]] += 1;
+    //    if (r[1] + 1 < nums.size())
+    //        cnt[r[1] + 1] -= 1;
+    //}
+    //partial_sum(begin(cnt), end(cnt), begin(cnt));
+    //sort(begin(nums), end(nums));
+    //sort(begin(cnt), end(cnt));
+    //return inner_product(begin(nums), end(nums), begin(cnt), 0,
+    //    [](int res, long long m) { return (res + m) % 1000000007; }, multiplies<long long>());
 
 
 
