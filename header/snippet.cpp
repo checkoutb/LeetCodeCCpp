@@ -683,6 +683,82 @@ public:
 
 
 
+//long long t2 = std::atoll(s.c_str());
+//long long t2 = std::stoll(s);
+
+
+
+
+
+
+    //unordered_map<int, int> counter;
+    //for (int i = 0; i < n; i++) {
+    //    for (int j = i; j < n; j++) {
+    //        counter = { {0,1} };
+
+
+
+
+// Psacal
+    //vector<vector<int>> r(numRows);
+
+    //for (int i = 0; i < numRows; i++) {
+    //    r[i].resize(i + 1);
+    //    r[i][0] = r[i][i] = 1;
+
+    //    for (int j = 1; j < i; j++)
+    //        r[i][j] = r[i - 1][j - 1] + r[i - 1][j];
+    //}
+
+
+
+
+    //vector<int> res = { 1, 0 };
+    //for (int i : initial)
+    //    res = min(res, { (malware[find(i)] == 1) * (-area[find(i)]), i });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
