@@ -721,6 +721,77 @@ public:
 
 
 
+//LT1178
+// tmp = val
+// tmp = (tmp - 1) & val        // 获得所有的 排列 (随机删除x个1的，x是0-bitCount)
+
+// tmp = (tmp - 1) & tmp        // 获得所有的 1 的个数
+
+
+
+
+    //auto val = [&](int i) { return s[i] - '`'; };
+    //for (int i = s.size() - 1; i >= 0; --i) {
+    //    hash = (hash * power + val(i)) % mod;
+
+
+
+
+
+
+cout << sizeof(long) << " vs. " << sizeof(long long) << endl;
+
+// long is 4 bits in the Microsoft's compiler. It could make sense to use more specific types, like int64_t
+
+
+
+
+
+
+
+
+
+
+
+//        vector<int> x;
+//        for (auto r : rectangles) {
+//            x.push_back(r[0]);
+//            x.push_back(r[2]);
+//        }
+//        sort(x.begin(), x.end());
+//        vector<int>::iterator end_unique = unique(x.begin(), x.end());
+//        x.erase(end_unique, x.end());
+
+
+
+
+    //tmp = counter(a);
+    //for (i = 0; i < 26; ++i)
+    //    if (tmp[i] < count[i])
+    //        break;
+    //if (i == 26) res.push_back(a);
+// no goto
+
+
+
+    //struct pairHash {
+    //    size_t operator()(const pair<int, int>& x) const { return x.first ^ x.second; }
+    //};
+    
+    //    unordered_set<pair<int, int>, pairHash> ls;
+// 自定义hash
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -867,11 +938,11 @@ https://www.cnblogs.com/nullzx/p/7968110.html
 
 
 
+//Morris Traversal
 
 
 
-
-
+//AKS素数测试
 
 
 
