@@ -785,7 +785,11 @@ cout << sizeof(long) << " vs. " << sizeof(long long) << endl;
 
 
 
-
+    //auto comp = [&](auto& a, auto& b)
+    //{
+    //    return a[2] > b[2];
+    //};
+    //priority_queue<node, vector<node>, decltype(comp)> pq(comp);
 
 
 
