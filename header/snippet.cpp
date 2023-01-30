@@ -801,11 +801,41 @@ cout << sizeof(long) << " vs. " << sizeof(long long) << endl;
 
 
 
+LT2512
+struct MyTrie
+{
+    MyTrie* next[26] = {};         // 要有 大括号。
+    int status;         // point.
+
+    MyTrie(int status) : status(status) {}
+    MyTrie() {}
+};
+
+void showMyTrie(MyTrie* mt, string s)
+{
+    if (mt->status != 0)
+    {
+        cout << s << " ==== " << mt->status << endl;
+    }
+    //for (MyTrie* nxt : mt->next)
+    for (int i = 0; i < 26; ++i)
+    {
+        MyTrie* nxt = mt->next[i];
+        if (nxt == nullptr)
+            continue;
+        showMyTrie(nxt, s + string(1, (char)(i + 'a')));
+    }
+}
+
+mt->next[ch - 'a'] = new MyTrie(0);
 
 
 
+//    unordered_set<string> pos(begin(pos_feed), end(pos_feed)), neg(begin(neg_feed), end(neg_feed));
 
 
+    //partial_sort(begin(sid), begin(sid) + k, end(sid));
+    //transform(begin(sid), begin(sid) + k, back_inserter(res), [](const auto& p) { return p.second; });
 
 
 
