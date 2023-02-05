@@ -839,6 +839,21 @@ mt->next[ch - 'a'] = new MyTrie(0);
 
 
 
+Sieve of Eratosthenes
+质数筛选
+埃拉托斯特尼筛法，简称埃氏筛
+i+=2
+
+
+priority_queue<int> pq(begin(nums), end(nums));
+
+
+
+
+int cnt1[26] = {}, cnt2[26] = {}, dist1 = 0, dist2 = 0;
+数组 + int 。。。
+
+
 
 
 
