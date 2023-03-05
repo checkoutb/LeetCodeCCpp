@@ -149,6 +149,18 @@ https://leetcode.com/Ouha/
 <br />
 
 
+##### 1700 / 2585 questions solved
+##### 5470 total submissions
+##### 2520 accepted submissions
+##### 46.1 % acceptance rate
+##### Easy 485/632
+##### Medium 971/1376
+##### Hard 244/577
+##### &#160;&#160;&#160;&#160;&#160;&#160; 2023-03-05
+
+
+<br />
+
 
 
 
