@@ -661,7 +661,7 @@ public:
 
 //sort(nums.begin(), nums.end(), greater<int>());
 //sort(nums.rbegin(), nums.rend());
-
+// sort(begin(n), end(n), greater<>());
 
 
 
@@ -858,11 +858,30 @@ int cnt1[26] = {}, cnt2[26] = {}, dist1 = 0, dist2 = 0;
 
 
 
+    auto mycomp = [](const ListNode* n1, const ListNode* n2) {
+        return n1->val >= n2->val;
+    };
+
+    lists.erase(std::remove_if(begin(lists), end(lists), [](const ListNode* np) { return np == nullptr; }), end(lists));
+
+    std::priority_queue<ListNode*, vector<ListNode*>, decltype(mycomp)> priq{ mycomp, lists };
 
 
 
-
-
+// LT2598  BIT(Fenwick)
+    //int bt[2002] = {}, n = 2001;
+    //int prefix_sum(int i)
+    //{
+    //    int sum = 0;
+    //    for (i = i + 1; i > 0; i -= i & (-i))
+    //        sum += bt[i];
+    //    return sum;
+    //}
+    //void add(int i, int val)
+    //{
+    //    for (i = i + 1; i <= n; i += i & (-i))
+    //        bt[i] += val;
+    //}
 
 
 
