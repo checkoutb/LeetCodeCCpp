@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import platform
 
 # mk xxxx.cpp
 
@@ -69,6 +70,12 @@ int main()
         fd = open(name, mode="a+", encoding='utf-8')
         fd.write(content)
         fd.close()
+    
+    with open("last_cpp_path", 'w', encoding='utf-8') as f:
+        f.write(name)
+
+    if 'linux' in platform.system().lower():
+        print(os.system("kdevelop " + name))
 
 if __name__ == "__main__":
     mk_cpp()
