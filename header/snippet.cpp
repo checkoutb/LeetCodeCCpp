@@ -1042,8 +1042,15 @@ https://www.cnblogs.com/nullzx/p/7968110.html
 
 
 
-
-
+    // string s = "1111";
+    // string& s2 = s;
+    // string& s3 = s;
+    // s += "22";
+    // cout<<s<<", "<<s2<<", "<<s3<<endl;       // 111122,111122,111122
+    // s2 = "zzz";
+    // cout<<s<<", "<<s2<<", "<<s3<<endl;       // zzz,zzz,zzz
+    //
+    // struct Node { string& str;  }  also
 
 
 
