@@ -29,6 +29,8 @@ using namespace std;
 
 #include <sstream>
 
+#include <array>
+
 #ifndef __test
 #define __test 1
 #endif // TEST
