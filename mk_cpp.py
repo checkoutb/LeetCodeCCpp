@@ -37,6 +37,11 @@ public:
 
 
 
+
+
+
+
+
 };
 
 int main()
@@ -75,7 +80,7 @@ int main()
         f.write(name)
 
     if 'linux' in platform.system().lower():
-        print(os.system("kdevelop " + name))
+        print(os.system("emacsclient +12 " + name + " &"))
 
 if __name__ == "__main__":
     mk_cpp()
